@@ -1,0 +1,227 @@
+hEnglish');
+
+
+
+
+ INSERT INTO LANGUAGE VALUES (2, 'Computer');
+
+
+
+
+INSERT INTO LANGUAGE VALUES (3, 'Malayalam');
+
+
+
+
+SELECT * FROM LANGUAGE;
+
+
+
+
+INSERT INTO PUBLISHER VALUES (11, 'Charles', 'Delhi');
+
+
+
+
+INSERT INTO PUBLISHER VALUES (12, 'Cyrus', 'Mumbai');
+
+
+
+
+INSERT INTO PUBLISHER VALUES (13, 'Lucas', 'Kolkata'); 
+
+
+
+
+INSERT INTO PUBLISHER VALUES (14, 'Marcus','Punjab');
+
+
+
+
+
+
+
+INSERT INTO BOOK VALUES (II0, BOOK1',1,100, 12, '2020-12-24',2, 'Published');
+
+
+
+
+INSERT INTO BOOK VALUES (111, 'Book2',3,250, 13 '2010-04-17', 1, 'Published); 
+
+
+
+
+INSERT INTO Book VALUES (112, 'Book3', 2,350,14,'2014-07-14',1,'Published') ;
+
+
+
+
+SELECT * FROM BOOK;
+
+
+
+
+
+
+
+INSERT INTO AUTHOR VALUES (101, 'Joel', 'joel@gmail',
+
+2743217, 'yes');
+
+
+
+
+INSERT INTO AUTHOR VALUES (102, 'Abin', 'abin@gmail',
+
+2847942, 'Yes');
+
+
+
+
+INSERT INTO AUTHOR VALUES (103, 'Febin','febin@gmail', 2948367 'Yes');
+
+
+
+
+
+
+
+INSERT INTO BOOK_ AUTHOR VALUES (110, 102); 
+
+ 
+
+INSERT INTO BOOK_AUTHOR VALUES (112, 101);  
+
+
+
+
+INSERT INTO BOOK_AUTHOR VALUES (111,103);
+
+
+
+
+SELECT *  FROM BOOK_AUTHOR;
+
+
+
+
+
+
+
+INSERT INTO MEMBER VALUES (1, 'Abel', 042,4, 2278942, 'abel@gmail','2023-04-01','active');
+
+
+
+
+INSERT INTO MEMBER VALUES (2, 'Nick', 074, 27, 2378942, 'nick@gmail, '2023-07-01', 'active');
+
+
+
+
+INSERT INTO MEMBER VALUES (3, 'Michael', 013, 20, 2478942, 'michael@gmail', '2023-01-14','active');
+
+
+
+
+SELECT * FROM MEMBER;
+
+
+
+
+
+
+
+
+
+
+INSERT INTO BOOK_ISSUE VALUES (047,'2023-04-21', 112, 2, '2023-04-28' ,'not issued');
+
+
+
+
+INSERT INTO BOOK_ ISSUE VALUES (048,'2023-09-22', 111, 3, '2023-09-29', 'issued');
+
+
+
+
+INSERT INTO BOOK_ISSUE VALUES (049, '2023-09-23', 110, 1, '2023-09-30','issued');
+
+
+
+
+SELECT * FROM BOOK_ ISSUE ;
+
+
+
+
+
+
+
+
+
+
+INSERT INTO BOOK_RETURN VALUES (47,'2023-05-05',7,10)
+
+
+
+
+INSERT INTO BOOK_ RETURN VALUES (49,'2023-10-08',8,100)
+
+
+
+
+SELECT * FROM BOOK_ RETURN
+
+
+
+
+
+
+
+INSERT INTO LATE_FEE_RULE VALUES ('2023-10-01', '2023-10-10', 100);
+
+
+
+
+INSERT INTO LATE_FEE_ RULE VALUES ('2023-10-01', '2023-10-20', 100);
+
+
+
+
+INSERT INTO LATE_FEE RULE_ VALUES ('2023-10-01', '2023-10-30', 110);
+
+
+
+
+SELECT * FROM LATE_FEE_RULE ;
+
+
+
+
+
+
+
+
+
+
+• using UPDATE and DELETE commands:
+
+
+
+
+UPDATE LANGUAGE SET Name = "Calculus'
+
+
+
+
+WHERE Language _id = 3;
+
+
+
+
+SELECT * FROM LANGUAGE ;
+
+
+
+
+DELETE FROM  LANGUAGE  WHERE Language_id = 3;
