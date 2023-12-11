@@ -1,0 +1,18 @@
+Name varchar(20), primary key (language_id));
+
+CREATE TABLE PUBLISHER (Publisher_id int,Name varchar(20), Adress  varchar(30), primary key (Publisher_id));
+
+CREATE TABLE BOOK (book_id int, title varchar(20), language_id int, MRP int , publisher_id int, published_date date, volume int, status varchar(20), primary key (Book_id), foreign key ( language_id) references PUBLISHER(publisher_id));
+
+CREATE TABLE AUTHOR ( Author_id int, Name varchar(20), Email varchar (20), phone_number int, status varchar (20), primary key ( Author_id));
+
+CREATE TABLE BOOK_AUTHOR (book_id int, Author_id int , Primary key(Author_id, book_id), Foreign key(Author_id) references BOOK (book_id), Foreign key (Author_id) references AUTHOR (Author_id));
+
+CREATE TABLE MEMBER (Member_id int, Name varchar(20), branch_code int, Roll_number int, Phone_number int, Email_id varchar(20), Date_of_joub date, Status varchar(20), primary key(Member_id));
+
+CREATE TABLE BOOK_ISSUE( Issue_id int, Date_of_issue date, Book_id int, Member_id int, Expected_date_of_return date, Status varchar(20), primary key(issue_id), Foreign key(book_id) refrences BOOK(Book_id), Foreign key (member_id) refrences MEMBER (member_id));
+
+
+CREATE TABLE BODK_RETURN (Issue_id int, Actual_date_of_return date, Late Days int, Latefees int, Primary key (Issue_id), Foreign key (Issue_id) references. BOOK_ISSUE (Issue id));
+
+CREATE TABLE LATE_FEE_ RULE (From Days date To Days date, Amount int, Pri
